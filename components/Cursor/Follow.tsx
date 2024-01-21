@@ -18,6 +18,11 @@ export default function Follow() {
         yPercent: -50,
       });
     };
+    gsap.from(imageRef.current, {
+      opacity: 0,
+      duration: 1.5,
+      delay: 1,
+    });
     document.addEventListener("mousemove", handleMouseMove);
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);

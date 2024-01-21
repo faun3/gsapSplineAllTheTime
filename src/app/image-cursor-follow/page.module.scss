@@ -1,14 +1,7 @@
-.pageWrapper {
-    background-color: black;
-    min-height: 100vh;
+.bigWrapper {
     display: flex;
-    padding: 2rem;
     align-items: center;
-    .text {
-        color: magenta;
-        font-weight: 900;
-        font-size: 80px;
-        margin-bottom: 1rem;
-        letter-spacing: -2px;
-    }
+    background-color: rgb(11, 5, 13);
+    padding: 2rem;
+    min-height: 100vh;
 }
