@@ -1,12 +1,20 @@
-import Follow from "../../../components/Cursor/Cursor";
+"use client";
+import Follow from "../../../components/Cursor/Follow";
+import styles from "./page.module.scss";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 export default function Page() {
   return (
-    <div>
+    <>
       <Follow />
-      <p>TEXT</p>
-      <p>TEXT</p>
-      <p>TEXT</p>
-    </div>
+      <div className={styles.pageWrapper}>
+        <div className={styles.textWrapper}>
+          <p className={styles.text}>TEXT</p>
+          <p className={styles.text}>GREATJOB</p>
+          <p className={styles.text}>AMAZING</p>
+        </div>
+      </div>
+    </>
   );
 }
