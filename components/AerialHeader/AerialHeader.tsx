@@ -28,7 +28,7 @@ export default function AerialHeader() {
     });
   });
   return (
-    <div ref={container}>
+    <div ref={container} className={styles.container}>
       <div
         className={styles.imageWrapper}
         style={{

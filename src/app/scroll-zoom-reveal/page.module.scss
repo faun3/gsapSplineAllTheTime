@@ -3,4 +3,33 @@
   width: 100%;
   background-color: hsl(0, 5%, 12%);
   overscroll-behavior: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forward {
+  z-index: 10;
+}
+.bodyText {
+  font-size: 32px;
+  font-weight: bold;
+  color: ivory;
+  padding: 0 5rem;
+  text-wrap: balance;
+  margin-bottom: 3rem;
+  &.pushDown {
+    margin-top: 65vh;
+  }
+}
+.text {
+  font-size: 15vw;
+  z-index: 10;
+  font-weight: 800;
+  color: ivory;
+  &.empty {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: ivory;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  }
 }
